@@ -1,7 +1,7 @@
 flightradar24.py
 ===============
 
-|Travis|_ |Codacy|_ |Coveralls|_
+|Travis|_ |Codacy|_ |Scrutinizer|_ |Coveralls|_
 
 .. |Travis| image:: https://api.travis-ci.org/mkorkmaz/flightradar24.svg?branch=master
 .. _Travis: https://travis-ci.org/mkorkmaz/flightradar24
@@ -12,6 +12,8 @@ flightradar24.py
 .. |Coveralls| image:: https://coveralls.io/repos/github/mkorkmaz/flightradar24/badge.svg?branch=master
 .. _Coveralls: https://coveralls.io/github/mkorkmaz/flightradar24?branch=master
 
+.. |Scrutinizer| image:: https://scrutinizer-ci.com/g/mkorkmaz/flightradar24/badges/quality-score.png?b=master
+.. _Scrutinizer: https://scrutinizer-ci.com/g/mkorkmaz/flightradar24/?branch=master
 
 Data library for Flightadar24.com written in Python 3.
 
