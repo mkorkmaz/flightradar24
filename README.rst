@@ -1,10 +1,10 @@
-Flight Radar 24
+flightradar24.py
 ===============
 
-Data library for Flight Radar 24 written in Python 3.
+Data library for Flightadar24.com written in Python 3.
 
 
-Installing flightradar24
+Installing flightradar24.py
 =====================
 
 .. code-block:: bash
@@ -51,7 +51,7 @@ Getting flight details
 Notes
 =====
 
-* flightradar24 will not follow the `semantic versioning scheme <http://semver.org/>`_ until the version 1.0.0. So there may be BC breaks.
+* flightradar24.py will not follow the `semantic versioning scheme <http://semver.org/>`_ until the version 1.0.0. So there may be BC breaks.
 
 
 Credits
