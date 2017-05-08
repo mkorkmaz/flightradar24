@@ -4,7 +4,7 @@ flightradar24.py
 |Travis|_ |Codacy|_
 
 .. |Travis| image:: https://api.travis-ci.org/mkorkmaz/flightradar24.svg?branch=master
-.. _Travis: https://api.travis-ci.org/mkorkmaz/flightradar24
+.. _Travis: https://travis-ci.org/mkorkmaz/flightradar24
 
 .. |Codacy| image:: https://api.codacy.com/project/badge/Grade/8c51d54a63c44c88839d07f61848df6d
 .. _Codacy: https://www.codacy.com/app/mehmet/flightradar24/
