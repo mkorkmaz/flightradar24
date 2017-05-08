@@ -1,7 +1,7 @@
 flightradar24.py
-===============
+================
 
-|Travis|_ |Codacy|_ |Scrutinizer|_ |Coveralls|_
+|Travis|_ |Coveralls|_ |Codacy|_ |Scrutinizer|_
 
 .. |Travis| image:: https://api.travis-ci.org/mkorkmaz/flightradar24.svg?branch=master
 .. _Travis: https://travis-ci.org/mkorkmaz/flightradar24
@@ -21,7 +21,7 @@ If you want to use  the data collected using this library commercially, You need
 
 
 Installing flightradar24.py
-=====================
+===========================
 
 .. code-block:: bash
 
