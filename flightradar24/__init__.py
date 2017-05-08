@@ -1,2 +1,4 @@
-from .core import Api
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
 
+from .core import Api

@@ -3,6 +3,7 @@
 from .helpers import *
 import time
 
+
 class Api:
     """Flight Radar 24 API"""
 
@@ -40,12 +41,12 @@ class Api:
         return api_request(self.baseUrl + self.metaDataEndPoints['airlines'])
 
     def get_flights(self, airline):
-        endpoint = self.liveDataUrl + self.realTimeDataEndPoints['flights']+airline+'&_='+str(time.time())
+        endpoint = self.liveDataUrl + self.realTimeDataEndPoints['flights'] + airline+'&_=' + str(time.time())
         return api_request(endpoint)
 
     def get_flight(self, flight_id):
-        endpoint = self.apiUrl + self.realTimeDataEndPoints['flight']+flight_id
+        endpoint = self.apiUrl + self.realTimeDataEndPoints['flight'] + flight_id
         return api_request(endpoint)
+
     def get_zones(self):
         return api_request(self.baseUrl + self.metaDataEndPoints['zones'])
-

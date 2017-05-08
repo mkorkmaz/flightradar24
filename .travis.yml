@@ -3,9 +3,9 @@ python:
   - "3.6"
 install:
   - python setup.py install
-  - pip install coverage coveralls
+  - pip install python-coveralls
 # command to run tests
-script: nosetests -v --with-coverage --cover-tests --cover-package=flightradar24 tests
+script: nosetests --verbosity=3 --with-cov --cover-erase --cover-package=flightradar24 tests
 
 after_success:
   coveralls

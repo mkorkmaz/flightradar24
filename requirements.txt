@@ -1,2 +1,4 @@
 nose
 requests
+python-coveralls
+coverage

@@ -6,7 +6,7 @@ import unittest
 
 
 class ContractTestSuite(unittest.TestCase):
-    """Advanced test cases."""
+    """Contact Integration test cases."""
 
     @staticmethod
     def test_balance_json():

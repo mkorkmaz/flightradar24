@@ -11,6 +11,6 @@ def api_request(end_point):
         raise RuntimeError("Request to " + end_point + " is Forbidden")
     if r.status_code is 404:
         raise RuntimeError("Request to " + end_point + " is NotFound")
-    if r.status_code is 404:
+    if r.status_code is 500:
         raise RuntimeError("Request to " + end_point + " returns InternalServerError")
     return r.json()
