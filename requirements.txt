@@ -1,4 +1,4 @@
-nose
+pytest
 requests
 python-coveralls
 coverage

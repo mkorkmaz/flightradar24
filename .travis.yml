@@ -2,11 +2,11 @@ language: python
 python:
   - "3.6"
 install:
-  - pip install python-coveralls
+  - pip install pytest-cov python-coveralls
   - pip install -r requirements.txt
   - python setup.py install
 # command to run tests
-script: nosetests --verbosity=3 --with-cov --cover-erase --cover-package=flightradar24 tests
+script: py.test --cov-report term --cov=tests
 
 after_success:
   coveralls
