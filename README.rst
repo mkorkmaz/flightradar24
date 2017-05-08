@@ -20,7 +20,7 @@ Getting airports list
     fr = flightradar24.Api()
     airlines = fr.get_airports()
 
-Getting airlines
+Getting airlines list
 
 .. code-block:: python
 
@@ -33,8 +33,9 @@ Getting flights list
 .. code-block:: python
 
     import flightradar24
+    airline = 'THY' # Turkish Airlines
     fr = flightradar24.Api()
-    flights = fr.get_flights('THY')
+    flights = fr.get_flights(airline)
 
 
 Getting flight details
@@ -42,7 +43,7 @@ Getting flight details
 .. code-block:: python
 
     import flightradar24
-    flight_id = 'TK1'
+    flight_id = 'TK1' # Turkish Airlines' Istanbul - New York flight
     fr = flightradar24.Api()
     flight = fr.get_flight(flight_id)
 
