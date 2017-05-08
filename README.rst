@@ -17,6 +17,8 @@ flightradar24.py
 
 Data library for Flightadar24.com written in Python 3.
 
+If you want to use  the data collected using this library commercially, You need to subscribe to Business Plan. See details at  `https://www.flightradar24.com/premium/ <https://www.flightradar24.com/premium/>`_
+
 
 Installing flightradar24.py
 =====================
