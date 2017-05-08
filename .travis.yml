@@ -6,7 +6,7 @@ install:
   - pip install -r requirements.txt
   - python setup.py install
 # command to run tests
-script: py.test --cov-report term --cov=tests
+script: py.test --cov-report term --cov=flightradar24
 
 after_success:
   coveralls
