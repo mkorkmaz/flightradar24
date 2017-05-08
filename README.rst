@@ -1,13 +1,17 @@
 flightradar24.py
 ===============
 
-|Travis|_ |Codacy|_
+|Travis|_ |Codacy|_ |Coveralls|_
 
 .. |Travis| image:: https://api.travis-ci.org/mkorkmaz/flightradar24.svg?branch=master
 .. _Travis: https://travis-ci.org/mkorkmaz/flightradar24
 
 .. |Codacy| image:: https://api.codacy.com/project/badge/Grade/8c51d54a63c44c88839d07f61848df6d
 .. _Codacy: https://www.codacy.com/app/mehmet/flightradar24/
+
+.. |Coveralls| image:: https://coveralls.io/repos/github/mkorkmaz/flightradar24/badge.svg?branch=master
+.. _Coveralls: https://coveralls.io/github/mkorkmaz/flightradar24?branch=master
+
 
 Data library for Flightadar24.com written in Python 3.
 
