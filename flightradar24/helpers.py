@@ -6,6 +6,8 @@ import requests
 def api_request(end_point):
     request_base_headers = {'User-agent': 'mkorkmaz/FR24/1.0'}
     r = requests.get(end_point, headers=request_base_headers)
+    if r.status_code is 402:
+        raise RuntimeError("Request to " + end_point + " requires payment")
     if r.status_code is 403:
         raise RuntimeError("Request to " + end_point + " is Forbidden")
     if r.status_code is 404:
