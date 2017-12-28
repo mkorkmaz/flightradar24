@@ -11,7 +11,7 @@ with open('LICENSE') as f:
 
 setup(
     name='flightradar24',
-    version='0.1.1',
+    version='0.1.3',
     description='Data library for Flight Radar 24',
     long_description=readme,
     author='Mehmet Korkmaz',

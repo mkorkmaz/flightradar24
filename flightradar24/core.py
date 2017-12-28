@@ -20,7 +20,7 @@ class Api:
 
     realTimeDataEndPoints = {
         'flight': '/flight/list.json?&fetchBy=flight&page=1&limit=25&query=',  # add flight number e.g: TK1
-        'flights': '/zones/fcgi/feed.js?airline=!'
+        'flights': '/zones/fcgi/feed.js?faa=1&mlat=1&flarm=1&adsb=1&gnd=1&air=1&vehicles=1&estimated=1&gliders=1&stats=1&maxage=14400&airline=!'
     }
 
     def __init__(self):
