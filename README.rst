@@ -34,7 +34,7 @@ Getting airports list
 
     import flightradar24
     fr = flightradar24.Api()
-    airlines = fr.get_airports()
+    airports = fr.get_airports()
 
 Getting airlines list
 
