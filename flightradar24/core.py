@@ -23,8 +23,9 @@ class Api:
         'flights': '/zones/fcgi/feed.js?faa=1&mlat=1&flarm=1&adsb=1&gnd=1&air=1&vehicles=1&estimated=1&gliders=1&stats=1&maxage=14400&airline=!'
     }
 
-    def __init__(self):
-        response = api_request(self.balanceJsonUrl)
+    def __init__(self, proxies=None):
+        self.proxies = proxies
+        response = api_request(self.balanceJsonUrl, self.proxies)
         tmp_weight = 0
         tmp_uri = None
         for uri, weight in response.items():
@@ -34,18 +35,18 @@ class Api:
         self.balanceUrl = tmp_uri
 
     def get_airports(self):
-        return api_request(self.baseUrl + self.metaDataEndPoints['airports'])
+        return api_request(self.baseUrl + self.metaDataEndPoints['airports'], self.proxies)
 
     def get_airlines(self):
-        return api_request(self.baseUrl + self.metaDataEndPoints['airlines'])
+        return api_request(self.baseUrl + self.metaDataEndPoints['airlines'], self.proxies)
 
     def get_flights(self, airline):
         endpoint = self.liveDataUrl + self.realTimeDataEndPoints['flights'] + airline+'&_=' + str(time.time())
-        return api_request(endpoint)
+        return api_request(endpoint, self.proxies)
 
     def get_flight(self, flight_id):
         endpoint = self.apiUrl + self.realTimeDataEndPoints['flight'] + flight_id
-        return api_request(endpoint)
+        return api_request(endpoint, self.proxies)
 
     def get_zones(self):
-        return api_request(self.baseUrl + self.metaDataEndPoints['zones'])
+        return api_request(self.baseUrl + self.metaDataEndPoints['zones'], self.proxies)
