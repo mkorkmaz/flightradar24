@@ -4,7 +4,7 @@ import requests
 
 
 def api_request(end_point, proxies=None):
-    request_base_headers = {'User-agent': 'mkorkmaz/FR24/1.0'}
+    request_base_headers = {'User-agent': 'mkorkmaz/FR24/2.0'}
     r = requests.get(end_point, headers=request_base_headers, proxies=proxies)
     if r.status_code is 402:
         raise RuntimeError("Request to " + end_point + " requires payment")
