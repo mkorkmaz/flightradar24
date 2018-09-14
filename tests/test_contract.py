@@ -13,6 +13,11 @@ class ContractTestSuite(unittest.TestCase):
         flightradar24.Api()
 
     @staticmethod
+    def test_balance_json_with_proxy():
+        proxies = {'http': 'http://78.188.162.174:45318', 'https': 'https://78.188.162.174:45318'}
+        flightradar24.Api(proxies=proxies)
+
+    @staticmethod
     def test_airports():
         fr = flightradar24.Api()
         airports = fr.get_airports()
