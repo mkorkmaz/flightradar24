@@ -14,7 +14,7 @@ class ContractTestSuite(unittest.TestCase):
 
     @staticmethod
     def test_balance_json_with_proxy():
-        proxies = {'http': 'http://78.188.162.174:45318', 'https': 'https://78.188.162.174:45318'}
+        proxies = {'http': 'http://196.43.235.238:53281', 'https': 'https://196.43.235.238:53281'}
         flightradar24.Api(proxies=proxies)
 
     @staticmethod
