@@ -1,12 +1,12 @@
 language: python
 python:
-  - "3.6"
+  - "3.8"
 install:
   - pip install pytest-cov python-coveralls
   - pip install -r requirements.txt
   - python setup.py install
 # command to run tests
-script: py.test --cov-report term --cov=flightradar24
+script: pytest --cov-report term --cov=flightradar24
 
 after_success:
   coveralls
