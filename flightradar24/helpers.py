@@ -6,7 +6,7 @@ import requests
 def api_request(end_point, proxies=None):
     request_base_headers = {
         "user-agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.0",
-        "accept": "application/jsoN",
+        "accept": "application/json",
         "accept-language": "en-EN",
         "cache-control": "max-age=0",
         "origin": "https://www.flightradar24.com",
