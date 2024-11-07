@@ -1,6 +1,13 @@
 flightradar24.py
 ================
 
+### IMPORTANT: Flightradar changed their internal API, this library is no longer functional.
+
+===================================================================================
+
+
+
+
 
 [![Travis](https://api.travis-ci.org/mkorkmaz/flightradar24.svg?branch=master)](https://travis-ci.org/mkorkmaz/flightradar24)
 [![Codacy](https://api.codacy.com/project/badge/Grade/8c51d54a63c44c88839d07f61848df6d)](https://www.codacy.com/app/mehmet/flightradar24/) [![Coveralls](https://coveralls.io/repos/github/mkorkmaz/flightradar24/badge.svg?branch=master)](https://coveralls.io/github/mkorkmaz/flightradar24?branch=master) [![Scrutinizer](https://scrutinizer-ci.com/g/mkorkmaz/flightradar24/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/mkorkmaz/flightradar24/?branch=master)
